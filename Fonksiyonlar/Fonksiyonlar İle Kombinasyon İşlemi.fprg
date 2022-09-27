@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-27 10:59:41 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMjc7MTA6NTE6MDcgw5ZTOzI5MTU="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMjc7MTA6NTk6NDEgw5ZTOzE7MzAyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, r, nfakt, rfakt, neksirfakt" type="Integer" array="False" size=""/>
+            <declare name="sonuc" type="Real" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen Kombinasyonunu Hesaplamak &#304;stedi&#287;iniz Say&#305;n&#305;n n'sini Giriniz.&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;L&#252;tfen Kombinasyonunu Hesaplamak &#304;stedi&#287;iniz Say&#305;n&#305;n r'sini Giriniz.&quot;" newline="True"/>
+            <input variable="r"/>
+            <assign variable="nfakt" expression="faktoriyelHesapla(n)"/>
+            <assign variable="rfakt" expression="faktoriyelHesapla(r)"/>
+            <assign variable="neksirfakt" expression="faktoriyelHesapla(n-r)"/>
+            <assign variable="sonuc" expression="nfakt / ( rfakt * neksirfakt)"/>
+            <output expression="&quot;Girdi&#287;iniz Kombinasyonun De&#287;eri: &quot; &amp; sonuc" newline="True"/>
+        </body>
+    </function>
+    <function name="faktoriyelHesapla" type="Integer" variable="faktoriyelSonuc">
+        <parameters>
+            <parameter name="sayi" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="faktoriyelSonuc, i" type="Real" array="False" size=""/>
+            <assign variable="faktoriyelSonuc" expression="1"/>
+            <for variable="i" start="1" end="sayi" direction="inc" step="1">
+                <assign variable="faktoriyelSonuc" expression="faktoriyelSonuc * i"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-27 12:01:00 &#214;&#214;"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMjY7MTE6NDc6MzUgw5ZTOzI5MjE="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMjc7MTI6MDE6MDAgw5bDljsxOzMxNDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2" type="Integer" array="False" size=""/>
+            <output expression="&quot;L&#252;tfen Birinci Say&#305;n&#305;z&#305; Giriniz.&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;L&#252;tfen &#304;kinci Say&#305;n&#305;z&#305; Giriniz&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <call expression="toplama(sayi1,sayi2)"/>
+            <call expression="&#231;arpma(sayi1,sayi2)"/>
+            <call expression="b&#246;lme(sayi1,sayi2)"/>
+            <call expression="c&#305;karma(sayi1,sayi2)"/>
+        </body>
+    </function>
+    <function name="b&#246;lme" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="b&#246;lme" type="Real" array="False" size=""/>
+            <assign variable="b&#246;lme" expression="a / b"/>
+            <output expression="&quot;Girdi&#287;iniz Say&#305;lar&#305;n B&#246;l&#252;m&#252;: &quot; &amp; b&#246;lme" newline="True"/>
+        </body>
+    </function>
+    <function name="c&#305;karma" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="c&#305;karma" type="Integer" array="False" size=""/>
+            <if expression="a &gt; b">
+                <then>
+                    <assign variable="c&#305;karma" expression="a - b"/>
+                </then>
+                <else>
+                    <assign variable="c&#305;karma" expression="b - a"/>
+                </else>
+            </if>
+            <output expression="&quot;Girdi&#287;iniz Say&#305;lar&#305;n Fark&#305;: &quot; &amp; c&#305;karma" newline="True"/>
+        </body>
+    </function>
+    <function name="&#231;arpma" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="carpma" type="Integer" array="False" size=""/>
+            <assign variable="carpma" expression="a * b"/>
+            <output expression="&quot;Girdi&#287;iniz Say&#305;lar&#305;n &#199;arp&#305;m&#305;: &quot; &amp; carpma" newline="True"/>
+        </body>
+    </function>
+    <function name="toplama" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="topla" type="Integer" array="False" size=""/>
+            <assign variable="topla" expression="a + b"/>
+            <output expression="&quot;Girdi&#287;iniz Say&#305;lar&#305;n Toplam&#305;: &quot; &amp; topla" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

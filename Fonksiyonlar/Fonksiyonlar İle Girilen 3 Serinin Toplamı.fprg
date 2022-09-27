@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-27 11:41:36 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMjc7MTE6MzE6NDUgw5ZTOzI5MTY="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMjc7MTE6NDE6MzYgw5ZTOzE7MzAyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1bas, sayi1bit, sayi2bas, sayi2bit, sayi3bas, sayi3bit, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <output expression="&quot;L&#252;tfen Birinci Serinin Ba&#351;lang&#305;&#231; De&#287;erini Giriniz.&quot;" newline="True"/>
+            <input variable="sayi1bas"/>
+            <output expression="&quot;L&#252;tfen Birinci Serinin Biti&#351; De&#287;erini Giriniz.&quot;" newline="True"/>
+            <input variable="sayi1bit"/>
+            <output expression="&quot;L&#252;tfen &#304;kinci Serinin Ba&#351;lang&#305;&#231; De&#287;erini Giriniz.&quot;" newline="True"/>
+            <input variable="sayi2bas"/>
+            <output expression="&quot;L&#252;tfen &#304;kinci Serinin Biti&#351; De&#287;erini Giriniz.&quot;" newline="True"/>
+            <input variable="sayi2bit"/>
+            <output expression="&quot;L&#252;tfen &#220;&#231;&#252;nc&#252; Serinin Ba&#351;lang&#305;&#231; De&#287;erini Giriniz.&quot;" newline="True"/>
+            <input variable="sayi3bas"/>
+            <output expression="&quot;L&#252;tfen &#220;&#231;&#252;nc&#252; Serinin Biti&#351; De&#287;erini Giriniz.&quot;" newline="True"/>
+            <input variable="sayi3bit"/>
+            <assign variable="toplam" expression="seriToplami(sayi1bas,sayi1bit) + seriToplami(sayi2bas,sayi2bit) + seriToplami(sayi3bas,sayi3bit)"/>
+            <output expression="&quot;Girmi&#351; Oldu&#287;unuz Serilerin Toplam&#305;: &quot; &amp; toplam" newline="True"/>
+        </body>
+    </function>
+    <function name="seriToplami" type="Integer" variable="seriSonuc">
+        <parameters>
+            <parameter name="baslangic" type="Integer" array="False"/>
+            <parameter name="bitis" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="seriSonuc, i" type="Integer" array="False" size=""/>
+            <assign variable="seriSonuc" expression="0"/>
+            <for variable="i" start="baslangic" end="bitis" direction="inc" step="1">
+                <assign variable="seriSonuc" expression="seriSonuc + i"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

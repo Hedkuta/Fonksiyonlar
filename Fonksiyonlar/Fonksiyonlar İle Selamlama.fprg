@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="KUTAY"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-26 11:34:39 &#214;S"/>
+        <attribute name="created" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMjY7MTE6MzE6MDAgw5ZTOzI5MDY="/>
+        <attribute name="edited" value="S1VUQVk7TEFQVE9QLVRTRENTNElMOzIwMjItMDktMjY7MTE6MzQ6Mzkgw5ZTOzE7MzAyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="Ho&#351;geldin"/>
+        </body>
+    </function>
+    <function name="Ho&#351;geldin" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Sitemize Ho&#351;geldiniz.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
